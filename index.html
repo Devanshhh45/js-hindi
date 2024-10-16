@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/istyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Online Voting System</h1>
+        <div class="row mt-4">
+            <div class="col-md-4 offset-md-4">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="userType">Select User Type</label>
+                        <select class="form-control" id="userType">
+                            <option value="admin">Admin</option>
+                            <option value="voter">Voter</option>
+                            <option value="candidate">Candidate</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter password">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

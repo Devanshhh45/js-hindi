@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Dashboard - Online Voting System</title>
+    <link rel="stylesheet" href="css/vstyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Voter Dashboard</h1>
+
+        <h2>Available Elections</h2>
+        <div id="elections"></div>
+
+        <h2>Cast Your Vote</h2>
+        <form id="castVoteForm">
+            <div class="form-group">
+                <label for="electionId">Election</label>
+                <select id="electionId" required></select>
+            </div>
+            <div class="form-group">
+                <label for="candidateId">Candidate</label>
+                <select id="candidateId" required></select>
+            </div>
+            <button type="submit">Submit Vote</button>
+        </form>
+
+        <h2>Election Results</h2>
+        <button id="viewResults">View Results</button>
+        <div id="results"></div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
